@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../App.css";
 
 export default function LessOrMoreText({text, max = 55}){ 
   const [showLess, setShowLess] = useState(true);
@@ -25,7 +26,12 @@ export default function LessOrMoreText({text, max = 55}){
   return (
     <span>
       {showLess ? `${text.substring(0, max)}...` : text}
-      <a href="#" onClick={(event) => handleOnClick(event)}>{showLess ? "more" : "less"}</a>
+      <button 
+        onClick={(event) => handleOnClick(event)}
+        className="btn"
+        >
+        {showLess ? "more" : "less"}
+      </button>
     </span>
   )
 };

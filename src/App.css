@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.btn {
+  border: none;
+	display: inline;
+	color: rgb(42, 42, 172);
+	background-color: inherit;
+	font-size: 14px;
+	cursor: pointer;
+
+}
